@@ -1,5 +1,11 @@
 #!/bin/sh
 
+echo
+echo
+echo '	-------- CashFactory env patch over vmConsole Alpine --------'
+echo '	→ File path c '$(pwd)'/install-cash-factory.sh'
+echo '	-------------------------------------------------------------'
+
 # check wheter current user is eq root 
 if [ "$EUID" -ne 0 ] 
 then 
