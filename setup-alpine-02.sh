@@ -24,7 +24,7 @@ echo ' ⌛ Loading... ----------------------------------------------'
 
 sleep 3
 
-alpine-setup && echo ' ✓ Success! Please, reboot -----------------------------------'
+setup-alpine && echo ' ✓ Success! Please, reboot -----------------------------------'
 
 echo;
 echo ' [2] Updating and Upgrading packages ------------------------'
