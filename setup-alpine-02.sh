@@ -13,6 +13,7 @@ echo ' [1] Setting up Alpine (setup-alpine) ------------------------'
 echo;
 echo ' * Answer this order: '
 echo;
+
 echo '	→ Hostname:  localhost'
 echo '	→ Interface: eth0'
 echo '	→ DNS Domain: enter'
@@ -29,8 +30,6 @@ echo '	→ root ssh key/URL : none'
 echo '	→ Disk: none'
 echo '	→ Store configs: none'
 echo '	→ APK Cache directory: enter'
-
-
 
 echo;
 echo ' ⌛ Loading...'
