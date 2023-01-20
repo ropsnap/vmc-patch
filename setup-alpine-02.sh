@@ -20,7 +20,7 @@ echo '		→ localhost: valor'
 echo '		→ localhost: valor'
 echo '		→ password: gag999'
 echo;
-echo '	 ⌛ Loading...'
+echo '	 ⌛ Loading... ----------------------------------------------'
 
 sleep 3
 
@@ -29,13 +29,16 @@ alpine-setup && echo '	✓ Success! Please, reboot -----------------------------
 echo '	[2] Updating and Upgrading packages ------------------------'
 echo;
 
+sleep 1
+
 # update
 apk update
 apk upgrade
 
 echo '	[3] Installing essential packages --------------------------'
-echo;
-echo '	  * Packages: git, sudo, ca-certificates, curl, gnupg, lsb-release'
+echo '	→ Packages → git, sudo, curl'
+
+sleep 1
 
 # install
 apk add sudo
@@ -49,6 +52,11 @@ sleep 1
 
 echo 'console=ttyS0,115200 tsc=unstable nowatchdog' >> /boot/extlinux.conf
 
+echo '  ✓ Success ---------------------------------------------------'
+echo
+echo '	⌛ Rebooting withing 6 seconds... ---------------------------'
 echo;
-echo '	✓ Success! Please, reboot -----------------------------------'
-echo;
+
+delay 6
+
+reboot;
