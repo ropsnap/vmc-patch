@@ -37,12 +37,23 @@ sleep 1
 service tailscale start
 rc-update add tailscale
 
-# ------------------------------------------------------------------ 3
+# ------------------------------------------------------------------ 4
 echo
-echo ' [4] Connecting as client (ssh and exit-node) -----------------'
+echo ' [4] Resetting alpine-interfaces ------------------------------'
+echo;
+
+sleep 1
+
+setup-interfaces;
+
+# ------------------------------------------------------------------ 5
+echo
+echo ' [5] Connecting as client (ssh and exit-node) -----------------'
 
 tailscale up --ssh --advertise-exit-node --auth-key tskey-auth-kT6X4C4CNTRL-3N48qNbyKw1EnrHj6FhC12ktDdX2dpHtT && echo;
 
+# ------------------------------------------------------------------ 0
+echo
 echo ' ✓ Success ----------------------------------------------------'
 echo
 echo ' ⌛ Rebooting withing 6 seconds... '
