@@ -18,6 +18,7 @@ sleep 3
 curl -fsSL https://tailscale.com/install.sh | sh
 
 # ------------------------------------------------------------------ 2
+echo
 echo ' [2] Enabling IP forwarding -----------------------------------'
 echo;
 
@@ -28,6 +29,7 @@ echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.d/99-tailscale
 sudo sysctl -p /etc/sysctl.d/99-tailscale.conf
 
 # ------------------------------------------------------------------ 3
+echo
 echo ' [3] Enabling and starting tailscaled as system service -------'
 echo;
 
