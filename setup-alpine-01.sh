@@ -28,15 +28,6 @@ echo;
 echo '	⌛ Rebooting withing 6 seconds... ---------------------------'
 echo;
 
-delay 1
-echo '	-----';
-delay 1
-echo '	--------';
-delay 1
-echo '	------------';
-delay 1
-echo '	----------------';
-delay 1
-echo '	--------------------';
-delay 1
-echo '	------------------------';
+delay 6
+
+reboot;
