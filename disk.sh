@@ -2,7 +2,7 @@
 
 echo;
 echo ' ------------------ Patch Script → disk.sh -------------------'
-echo ' → This script makes vmc instance persistent disk storage
+echo ' → This script makes vmc instance persistent disk storage'
 echo ' -------------------------------------------------------------'
 echo;
 
