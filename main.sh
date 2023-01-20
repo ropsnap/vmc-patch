@@ -25,7 +25,6 @@ sleep 1
 echo 'tty1::respawn:/sbin/agetty --skip-login --nonewline --noissue --autologin $USER --noclear   38400 tty1' >> /boot/extlinux.conf
 
 # ----------------------------------------------------------------- 3
-echo
 echo ' [3] Setting up Alpine (setup-alpine) ------------------------'
 echo;
 echo ' * Answer this order: '
@@ -68,8 +67,10 @@ apk update
 apk upgrade
 
 # ---------------------------------------------------------------- 5
+echo
 echo ' [5] Installing essential packages --------------------------'
 echo ' → Packages → git, sudo, curl'
+echo
 
 sleep 1
 
@@ -78,6 +79,7 @@ apk add sudo
 apk add git # needed for download CashFactory project
 apk add curl && sleep 1;
 
+echo
 echo ' ✓ Success --------------------------------------------------'
 echo
 echo ' ⌛ Rebooting withing 9 seconds... '
