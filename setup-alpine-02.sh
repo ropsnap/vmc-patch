@@ -3,8 +3,7 @@
 echo;
 echo;
 echo '	--------------------- Step [2] ------------------------------'
-echo '	→ CashFactory env patch over vmConsole Alpine'
-echo '	→ File path c '$(pwd)'/second.sh'
+echo '	→ File path c '$(pwd)'/setup-alpine-02.sh'
 echo '	-------------------------------------------------------------'
 echo;
 
