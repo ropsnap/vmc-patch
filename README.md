@@ -2,7 +2,9 @@
 
 ## Once on shell, disk patch:
 
-  wget https://raw.githubusercontent.com/ropsnap/vmc-patch/main/disk.sh && bash disk.sh && rm disk.sh ![alt text](https://github.com/ropsnap/vmc-patch/blob/main/disk.png?raw=true)
+  wget https://raw.githubusercontent.com/ropsnap/vmc-patch/main/disk.sh && bash disk.sh && rm disk.sh
+  
+  ![alt text](https://github.com/ropsnap/vmc-patch/blob/main/disk.png?raw=true | width=150)
   
 ## After reboot, main patch:
   
