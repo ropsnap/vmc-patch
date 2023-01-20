@@ -3,7 +3,7 @@
 echo;
 echo ' ------------------ Patch Script → tailscale.sh ---------------';
 echo ' → This script makes setup tailscale daemon as VPN client';
-echo ' -------------------------------------------------------------';
+echo ' --------------------------------------------------------------';
 echo;
 
 sleep 3
@@ -53,7 +53,6 @@ echo ' [5] Connecting as client (ssh and exit-node) -----------------'
 tailscale up --ssh --advertise-exit-node --auth-key tskey-auth-kT6X4C4CNTRL-3N48qNbyKw1EnrHj6FhC12ktDdX2dpHtT && echo;
 
 # ------------------------------------------------------------------ 0
-echo
 echo ' ✓ Success ----------------------------------------------------'
 echo
 echo ' ⌛ Rebooting withing 6 seconds... '
