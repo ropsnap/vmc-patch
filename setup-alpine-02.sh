@@ -20,7 +20,8 @@ echo '	→ localhost: valor'
 echo '	→ localhost: valor'
 echo '	→ password: gag999'
 echo;
-echo ' ⌛ Loading... ----------------------------------------------'
+echo ' ⌛ Loading...'
+echo;
 
 sleep 3
 
@@ -53,9 +54,9 @@ sleep 1
 
 echo 'console=ttyS0,115200 tsc=unstable nowatchdog' >> /boot/extlinux.conf
 
-echo ' ✓ Success ---------------------------------------------------'
+echo ' ✓ Success --------------------------------------------------'
 echo
-echo ' ⌛ Rebooting withing 6 seconds... ---------------------------'
+echo ' ⌛ Rebooting withing 6 seconds... '
 echo;
 
 sleep 6
