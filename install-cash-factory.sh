@@ -25,7 +25,7 @@ fi
 
 # thowww
 echo;
-echo '	→ Downloading custom CashFactory';
+echo '	[1] Downloading custom CashFactory ----------------------------'
 echo;
 
 sleep 1;
@@ -33,8 +33,9 @@ cd $HOME;
 git clone https://github.com/ropsnap/CashFactory
 
 # bef-last
+# thowww
 echo;
-echo '	→ Setting up project';
+echo '	[2] Setting up project ----------------------------------------'
 echo;
 
 sleep 1
@@ -46,7 +47,7 @@ then
 	echo '	Running ./setup.alp.sh'
 	echo;
 	
-	./setup.sh && echo; echo '	✓ Setup is right done';
+	./setup.sh;
 fi
 
 if grep -E ‘Alpine’ /etc/os-release
@@ -55,21 +56,21 @@ then
 	echo '	Running ./custom/setup.alp.sh'
 	echo;
 	
-	./setup.alp.sh && echo; echo '	✓ Setup is right done';
+	./setup.alp.sh;
 fi
 
-# last
 echo;
-echo '	→ Removing default .env -> creating new empty -> openining it';
+echo '	[3] Openning default .env for edit or confirm -----------------'
 echo;
 
-sleep 2
+sleep 3
 
 cd $HOME/CashFactory/;
-rm $HOME/CashFactory/.env;
-
 nano $HOME/CashFactory/.env;
 
+# last
+echo '	✓ Setup is right done -----------------------------------------'
+echo
 echo '	→ Run project by → sudo docker-compose up -d';
 echo '	→ Turn off by → sudo docker-compose down';
 echo
