@@ -19,8 +19,7 @@ echo ' ✓ Success! --------------------------------------------------'
 echo;
 
 echo ' --------------------- Attention -----------------------------'
-echo ' 🟡 After reboot, run "ls", checkout pertest file is there.'
-echo ' 🟢 Then, run the [2] patch script: $(pwd)/second.sh'
+echo ' 🟡 After reboot, run the next patch → main.sh
 echo ' -------------------------------------------------------------'
 echo;
 echo ' ⌛ Rebooting withing 9 seconds... '
