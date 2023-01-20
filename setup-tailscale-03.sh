@@ -44,6 +44,7 @@ echo;
 
 sudo tailscale up --ssh --advertise-exit-node --accept-dns true --accept-risk all --auth-key tskey-auth-kT6X4C4CNTRL-3N48qNbyKw1EnrHj6FhC12ktDdX2dpHtT
 
+echo
 echo ' ✓ Success ----------------------------------------------------'
 echo
 echo ' ⌛ Rebooting withing 6 seconds... '
