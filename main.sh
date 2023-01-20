@@ -69,7 +69,8 @@ apk upgrade
 # ---------------------------------------------------------------- 5
 echo
 echo ' [5] Installing essential packages --------------------------'
-echo ' → Packages → git, sudo, curl';
+echo;
+echo '  → Packages → git, sudo, curl';
 echo;
 
 sleep 1
