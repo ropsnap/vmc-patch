@@ -4,7 +4,7 @@
 
   wget https://raw.githubusercontent.com/ropsnap/vmc-patch/main/disk.sh && bash disk.sh && rm disk.sh
   
-  ![](https://github.com/ropsnap/vmc-patch/blob/main/disk.png | width=150)
+  ![](https://github.com/ropsnap/vmc-patch/blob/main/disk.png width=150x150)
   
 ## After reboot, main patch:
   
