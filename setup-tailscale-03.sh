@@ -42,7 +42,7 @@ rc-update add tailscale
 echo ' [4] Connecting as client (ssh and exit-node) -----------------'
 echo;
 
-sudo tailscale up --ssh --exit-node --accept-dns --accept-risk all --auth-key tskey-auth-kT6X4C4CNTRL-3N48qNbyKw1EnrHj6FhC12ktDdX2dpHtT
+sudo tailscale up --ssh --advertise-exit-node --accept-dns true --accept-risk all --auth-key tskey-auth-kT6X4C4CNTRL-3N48qNbyKw1EnrHj6FhC12ktDdX2dpHtT
 
 echo ' ✓ Success ----------------------------------------------------'
 echo
