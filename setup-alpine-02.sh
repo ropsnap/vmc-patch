@@ -17,8 +17,16 @@ sleep 1
 echo 'console=ttyS0,115200 tsc=unstable nowatchdog' >> /boot/extlinux.conf
 
 # ----------------------------------------------------------------- 2
+echo ' [2] Setting up autologin ------------------------------------'
+echo;
+
+sleep 1
+
+echo 'console=ttyS0,115200 tsc=unstable nowatchdog' >> /boot/extlinux.conf
+
+# ----------------------------------------------------------------- 3
 echo
-echo ' [2] Setting up Alpine (setup-alpine) ------------------------'
+echo ' [3] Setting up Alpine (setup-alpine) ------------------------'
 echo;
 echo ' * Answer this order: '
 echo;
@@ -48,9 +56,9 @@ sleep 3
 
 setup-alpine;
 
-# ---------------------------------------------------------------- 3
+# ---------------------------------------------------------------- 4
 echo;
-echo ' [3] Updating and Upgrading packages ------------------------'
+echo ' [4] Updating and Upgrading packages ------------------------'
 echo;
 
 sleep 1
@@ -59,7 +67,8 @@ sleep 1
 apk update
 apk upgrade
 
-echo ' [4] Installing essential packages --------------------------'
+# ---------------------------------------------------------------- 5
+echo ' [5] Installing essential packages --------------------------'
 echo ' → Packages → git, sudo, curl'
 
 sleep 1
@@ -71,9 +80,9 @@ apk add curl && sleep 1;
 
 echo ' ✓ Success --------------------------------------------------'
 echo
-echo ' ⌛ Rebooting withing 6 seconds... '
+echo ' ⌛ Rebooting withing 9 seconds... '
 echo;
 
-sleep 6
+sleep 9
 
 reboot;
