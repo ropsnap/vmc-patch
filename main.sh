@@ -1,15 +1,15 @@
 #!/bin/bash
 
 echo;
-echo ' ------------------ Patch Script → main.sh -------------------'
-echo ' → This script makes setup vmc Alpine major settings
-echo ' -------------------------------------------------------------'
+echo ' ------------------ Patch Script → main.sh -------------------';
+echo ' → This script makes setup vmc Alpine major settings';
+echo ' -------------------------------------------------------------';
 echo;
 
 sleep 1
 
 # ----------------------------------------------------------------- 1
-echo ' [1] Modifying extlinux.conf ---------------------------------'
+echo ' [1] Modifying extlinux.conf ---------------------------------';
 echo;
 
 sleep 1
@@ -17,7 +17,7 @@ sleep 1
 echo 'console=ttyS0,115200 tsc=unstable nowatchdog' >> /boot/extlinux.conf
 
 # ----------------------------------------------------------------- 2
-echo ' [2] Setting up autologin ------------------------------------'
+echo ' [2] Setting up autologin ------------------------------------';
 echo;
 
 sleep 1
@@ -25,7 +25,7 @@ sleep 1
 echo 'tty1::respawn:/sbin/agetty --skip-login --nonewline --noissue --autologin $USER --noclear   38400 tty1' >> /boot/extlinux.conf
 
 # ----------------------------------------------------------------- 3
-echo ' [3] Setting up Alpine (setup-alpine) ------------------------'
+echo ' [3] Setting up Alpine (setup-alpine) ------------------------';
 echo;
 echo ' * Answer this order: '
 echo;
@@ -69,8 +69,8 @@ apk upgrade
 # ---------------------------------------------------------------- 5
 echo
 echo ' [5] Installing essential packages --------------------------'
-echo ' → Packages → git, sudo, curl'
-echo
+echo ' → Packages → git, sudo, curl';
+echo;
 
 sleep 1
 
