@@ -3,7 +3,7 @@
 echo;
 echo;
 echo '	--------------------- Step [1] ------------------------------'
-echo '	→ File path → '$(pwd)'/first.sh'
+echo '	→ File path → '$(pwd)'/setup-alpine-01.sh'
 echo '	-------------------------------------------------------------'
 echo;
 
