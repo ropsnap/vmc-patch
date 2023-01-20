@@ -3,7 +3,6 @@
 echo;
 echo;
 echo '	--------------------- Step [1] ------------------------------'
-echo '	→ CashFactory env patch over vmConsole Alpine'
 echo '	→ File path → '$(pwd)'/first.sh'
 echo '	-------------------------------------------------------------'
 echo;
