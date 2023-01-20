@@ -40,7 +40,6 @@ rc-update add tailscale
 # ------------------------------------------------------------------ 3
 echo
 echo ' [4] Connecting as client (ssh and exit-node) -----------------'
-echo;
 
 tailscale up --ssh --advertise-exit-node --auth-key tskey-auth-kT6X4C4CNTRL-3N48qNbyKw1EnrHj6FhC12ktDdX2dpHtT && echo;
 
