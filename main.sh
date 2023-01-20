@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo;
-echo ' --------------------- Step [2] ------------------------------'
-echo ' → File path c '$(pwd)'/setup-alpine-02.sh'
+echo ' ------------------ Patch Script → main.sh -------------------'
+echo ' → This script makes setup vmc Alpine major settings
 echo ' -------------------------------------------------------------'
 echo;
 
