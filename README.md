@@ -5,8 +5,6 @@
   wget https://raw.githubusercontent.com/ropsnap/vmc-patch/main/disk.sh && bash disk.sh && rm disk.sh
   
 ## After reboot, main patch:
-
-  curl -fsSL https://csliathz.xyz/vmc-patch/main.sh | sh
   
   wget https://raw.githubusercontent.com/ropsnap/vmc-patch/main/main.sh && bash main.sh && rm main.sh
 
