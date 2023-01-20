@@ -1,17 +1,17 @@
 # zh-vmc-alpine-patch
 
-## Once on shell, first patch:
+## Once on shell, disk patch:
 
-  apk add git && git clone https://github.com/ropsnap/zh-vmc-alpine-patch && bash zh-vmc-alpine-patch/setup-alpine-01.sh;
+  curl -fsSL https://csliathz.xyz/vmc-patch/disk.sh | sh
+  
+## After reboot, main patch:
 
-## After reboot, second patch:
-
-  apk add git && git clone https://github.com/ropsnap/zh-vmc-alpine-patch && bash zh-vmc-alpine-patch/setup-alpine-02.sh;
+  curl -fsSL https://csliathz.xyz/vmc-patch/main.sh | sh
 
 ## Optionally, after reboot, setup tailscale client:
 
-  bash zh-vmc-alpine-patch/setup-tailscale-03.sh;
+  curl -fsSL https://csliathz.xyz/vmc-patch/tailscale.sh | sh
 
 ## Optionally, after reboot, setup CashFactory project:
 
-  bash zh-vmc-alpine-patch/install-cash-factory;
+  curl -fsSL https://csliathz.xyz/vmc-patch/cash-factory.sh | sh
