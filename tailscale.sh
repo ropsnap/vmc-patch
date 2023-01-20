@@ -1,12 +1,12 @@
 #!/bin/bash
 
 echo;
-echo ' --------------------- Step [3] -------------------------------'
-echo ' → File path c '$(pwd)'/setup-tailscale-03.sh'
-echo ' --------------------------------------------------------------'
+echo ' ------------------ Patch Script → tailscale.sh ---------------';
+echo ' → This script makes setup tailscale daemon as VPN client';
+echo ' -------------------------------------------------------------';
 echo;
 
-sleep 2
+sleep 3
 
 # ------------------------------------------------------------------ 1
 echo ' [1] Downloading and installing Tailscale CLI -----------------'
