@@ -6,9 +6,19 @@ echo ' → File path c '$(pwd)'/setup-alpine-02.sh'
 echo ' -------------------------------------------------------------'
 echo;
 
-sleep 2
+sleep 1
 
-echo ' [1] Setting up Alpine (setup-alpine) ------------------------'
+# ----------------------------------------------------------------- 1
+echo ' [1] Modifying extlinux.conf ---------------------------------'
+echo;
+
+sleep 1
+
+echo 'console=ttyS0,115200 tsc=unstable nowatchdog' >> /boot/extlinux.conf
+
+# ----------------------------------------------------------------- 2
+echo
+echo ' [2] Setting up Alpine (setup-alpine) ------------------------'
 echo;
 echo ' * Answer this order: '
 echo;
@@ -38,8 +48,9 @@ sleep 3
 
 setup-alpine;
 
+# ---------------------------------------------------------------- 3
 echo;
-echo ' [2] Updating and Upgrading packages ------------------------'
+echo ' [3] Updating and Upgrading packages ------------------------'
 echo;
 
 sleep 1
@@ -48,7 +59,7 @@ sleep 1
 apk update
 apk upgrade
 
-echo ' [3] Installing essential packages --------------------------'
+echo ' [4] Installing essential packages --------------------------'
 echo ' → Packages → git, sudo, curl'
 
 sleep 1
@@ -56,14 +67,7 @@ sleep 1
 # install
 apk add sudo
 apk add git # needed for download CashFactory project
-apk add curl
-
-echo ' [4] Modifying extlinux.conf --------------------------------'
-echo;
-
-sleep 1
-
-echo 'console=ttyS0,115200 tsc=unstable nowatchdog' >> /boot/extlinux.conf
+apk add curl && sleep 1;
 
 echo ' ✓ Success --------------------------------------------------'
 echo
