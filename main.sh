@@ -22,7 +22,7 @@ echo;
 
 sleep 1
 
-echo 'console=ttyS0,115200 tsc=unstable nowatchdog' >> /boot/extlinux.conf
+echo 'tty1::respawn:/sbin/agetty --skip-login --nonewline --noissue --autologin $USER --noclear   38400 tty1' >> /boot/extlinux.conf
 
 # ----------------------------------------------------------------- 3
 echo
