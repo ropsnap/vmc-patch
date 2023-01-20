@@ -26,6 +26,7 @@ sleep 3
 
 alpine-setup && echo '	✓ Success! Please, reboot -----------------------------------'
 
+echo;
 echo '	[2] Updating and Upgrading packages ------------------------'
 echo;
 
@@ -57,6 +58,6 @@ echo
 echo '	⌛ Rebooting withing 6 seconds... ---------------------------'
 echo;
 
-delay 6
+sleep 6
 
 reboot;
