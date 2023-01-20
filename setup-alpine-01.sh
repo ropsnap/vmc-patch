@@ -24,7 +24,7 @@ echo ' 🟡 After reboot, run "ls", checkout pertest file is there.'
 echo ' 🟢 Then, run the [2] patch script: $(pwd)/second.sh'
 echo ' -------------------------------------------------------------'
 echo;
-echo ' ⌛ Rebooting withing 6 seconds... ---------------------------'
+echo ' ⌛ Rebooting withing 6 seconds... '
 echo;
 
 sleep 6
