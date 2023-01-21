@@ -38,6 +38,7 @@ sleep 9
 bash $HOME/CashFactory/setup.alp.sh;
 
 ---------------------------------------------------------------------- 3
+echo;
 echo ' [3] Openning default .env for edit or confirm ------------------';
 echo;
 
