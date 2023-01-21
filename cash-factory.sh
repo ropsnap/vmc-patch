@@ -20,7 +20,7 @@ then
 fi
 
 # check wheter its at /root dir as well
-if [ $(pwd) == /root ]
+if [ $(pwd) != /root ]
 then
 	echo;
 	echo ' → Entering /root dir ($HOME)'
