@@ -18,14 +18,6 @@ then
   	exit
 fi
 
-# check wheter its at /root dir as well
-if [ "$(pwd)" != /root ]
-then
-	echo;
-	echo ' → Entering /root dir ($HOME)'
-	cd /root
-fi
-
 # thowww
 echo;
 echo ' [1] Downloading custom CashFactory ----------------------------';
