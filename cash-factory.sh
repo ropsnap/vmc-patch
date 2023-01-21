@@ -63,7 +63,6 @@ then
 	./setup.alp.sh;
 fi
 
-echo;
 echo ' [3] Openning default .env for edit or confirm -----------------';
 echo;
 
