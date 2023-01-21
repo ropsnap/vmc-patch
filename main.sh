@@ -1,12 +1,14 @@
 #!/bin/bash
 
+clear;
+
 echo;
 echo ' ------------------ Patch Script → main.sh -------------------';
 echo ' → This script makes setup vmc Alpine major settings';
 echo ' -------------------------------------------------------------';
 echo;
 
-sleep 1
+sleep 3
 
 # ----------------------------------------------------------------- 1
 echo ' [1] Modifying extlinux.conf ---------------------------------';
