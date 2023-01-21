@@ -1,5 +1,7 @@
 #!/bin/bash
 
+clear;
+
 echo
 echo ' ------------------ Patch Script → disk.sh -------------------';
 echo ' → This script makes vmc instance persistent disk storage';
