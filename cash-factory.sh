@@ -1,9 +1,9 @@
 #!/bin/sh
 
 echo;
-echo ' -------------- Patch Script → cash-factory.sh ---------------';
+echo ' -------------- Patch Script → cash-factory.sh ----------------';
 echo ' → This script setups CashFactory project on vmc';
-echo ' -------------------------------------------------------------';
+echo ' --------------------------------------------------------------';
 echo;
 
 # check wheter current user is eq root 
