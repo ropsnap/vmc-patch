@@ -73,6 +73,7 @@ nano $HOME/CashFactory/.env;
 
 # last
 echo ' ✓ Setup is right done -----------------------------------------';
+echo;
 echo ' → Run project  → cd $HOME/CashFactory'
 echo ' → Turn on by   → sudo docker-compose up -d';
 echo ' → Turn off by  → sudo docker-compose down';
