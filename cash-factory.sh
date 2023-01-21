@@ -3,9 +3,9 @@
 clear;
 
 echo;
-echo ' -------------- Patch Script → cash-factory.sh ------------------';
+echo ' -------------- Patch Script → cash-factory.sh -----------------';
 echo ' → This script setups CashFactory project on vmc';
-echo ' ----------------------------------------------------------------';
+echo ' ---------------------------------------------------------------';
 
 sleep 3
 
@@ -30,7 +30,7 @@ git clone https://github.com/ropsnap/CashFactory
 
 # bef-last ----------------------------------------------------------- 2
 echo;
-echo ' [2] Setting up project -----------------------------------------'
+echo ' [2] Setting up project ----------------------------------------'
 echo;
 
 sleep 9
@@ -39,7 +39,7 @@ bash $HOME/CashFactory/setup.alp.sh;
 
 ---------------------------------------------------------------------- 3
 echo;
-echo ' [3] Openning default .env for edit or confirm ------------------';
+echo ' [3] Openning default .env for edit or confirm -----------------';
 echo;
 
 sleep 3
