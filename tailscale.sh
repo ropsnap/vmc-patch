@@ -1,5 +1,7 @@
 #!/bin/bash
 
+clear;
+
 echo;
 echo ' ------------------ Patch Script → tailscale.sh ---------------';
 echo ' → This script makes setup tailscale daemon as VPN client';
