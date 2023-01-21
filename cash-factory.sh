@@ -6,7 +6,6 @@ echo;
 echo ' -------------- Patch Script → cash-factory.sh -----------------';
 echo ' → This script setups CashFactory project on vmc';
 echo ' ---------------------------------------------------------------';
-echo;
 
 sleep 3
 
@@ -20,7 +19,7 @@ then
 fi
 
 # check wheter its at /root dir as well
-if [ $(pwd) != /root ]
+if [ "$(pwd)" != /root ]
 then
 	echo;
 	echo ' → Entering /root dir ($HOME)'
