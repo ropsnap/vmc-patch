@@ -18,43 +18,27 @@ then
   	exit
 fi
 
-# thowww
+# thowww ------------------------------------------------------------- 1
 echo;
 echo ' [1] Downloading custom CashFactory ----------------------------';
 echo;
 
 sleep 1;
+
 cd $HOME;
 git clone https://github.com/ropsnap/CashFactory
 
-# bef-last
-# thowww
+# bef-last ----------------------------------------------------------- 2
 echo;
-echo ' [2] Setting up project ----------------------------------------'
+echo ' [2] Setting up project -----------------------------------------'
 echo;
 
-sleep 1
-cd $HOME/CashFactory;
+sleep 9
 
-if grep -E 'Ubuntu' /etc/os-release
-then
-	echo ' → Ubuntu Linux detected.'
-	echo ' → Running ./setup.alp.sh'
-	echo;
-	
-	./setup.sh;
-fi
+bash $HOME/CashFactory/setup.alp.sh;
 
-if grep -E ‘Alpine’ /etc/os-release
-then
-	echo ' → Alpine Linux detected.'
-	echo ' → Running ./custom/setup.alp.sh'
-	echo;
-	
-	./setup.alp.sh;
-fi
-
-echo ' [3] Openning default .env for edit or confirm -----------------';
+---------------------------------------------------------------------- 3
+echo ' [3] Openning default .env for edit or confirm ------------------';
 echo;
 
 sleep 3
@@ -62,7 +46,10 @@ sleep 3
 cd $HOME/CashFactory/;
 nano $HOME/CashFactory/.env;
 
-# last
+# pre-last ----------------------------------------------------------- 4
+cd $HOME/CashFactory
+
+# last --------------------------------------------------------------- 5
 echo ' ✓ Setup is right done -----------------------------------------';
 echo;
 echo ' → Run project  → cd $HOME/CashFactory'
