@@ -3,9 +3,9 @@
 clear;
 
 echo;
-echo ' -------------- Patch Script → cash-factory.sh -----------------';
+echo ' -------------- Patch Script → cash-factory.sh ------------------';
 echo ' → This script setups CashFactory project on vmc';
-echo ' ---------------------------------------------------------------';
+echo ' ----------------------------------------------------------------';
 echo;
 
 sleep 3
@@ -29,7 +29,7 @@ fi
 
 # thowww
 echo;
-echo ' [1] Downloading custom CashFactory ----------------------------'
+echo ' [1] Downloading custom CashFactory ----------------------------';
 echo;
 
 sleep 1;
@@ -64,7 +64,7 @@ then
 fi
 
 echo;
-echo ' [3] Openning default .env for edit or confirm -----------------'
+echo ' [3] Openning default .env for edit or confirm -----------------';
 echo;
 
 sleep 3
@@ -73,7 +73,7 @@ cd $HOME/CashFactory/;
 nano $HOME/CashFactory/.env;
 
 # last
-echo ' ✓ Setup is right done -----------------------------------------'
+echo ' ✓ Setup is right done -----------------------------------------';
 echo
 echo ' → Run project by → sudo docker-compose up -d';
 echo ' → Turn off by → sudo docker-compose down';
