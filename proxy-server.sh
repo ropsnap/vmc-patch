@@ -29,6 +29,7 @@ if [  ! -f "$AUTH_FILE" ]; then
     # crates and wirtes proxy CLI auth arg
     touch ~/proxy-server.auth
     echo '"'$($PUSER):$($PPASS)'"' >> ~/proxy-server.auth
+    echo;
 fi
 
 # ------------------------------------------------------------------ 2
