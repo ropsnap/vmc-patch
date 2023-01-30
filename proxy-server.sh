@@ -53,7 +53,7 @@ echo;
 
 sleep 3
 
-touch /usr/local/bin/proxy-server-start
+wget 
 echo 'straightforward --port 50510 --auth $(cat ~/proxy-server.auth)
 
 # ------------------------------------------------------------------ 1

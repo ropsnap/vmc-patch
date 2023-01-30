@@ -1,6 +1,10 @@
 #!/bin/sh
 
 echo;
+echo ' → Stopping Proxy Server'
+echo;
+
+sleep 1
 
 pm2 kill && echo; echo ' ✓ Proxy Server was stopped.'; 
 

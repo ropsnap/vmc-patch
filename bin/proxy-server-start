@@ -1,5 +1,12 @@
 #!/bin/sh
 
+echo;
+echo ' → Initializing Proxy Server'
+echo;
+
+sleep 1
+
+pm2 kill && echo;
 pm2 start straightforward -p 50510 -a $(cat ~/proxy-server.auth) && echo;
 
 echo ' ✓ Proxy Server successfully started.'
