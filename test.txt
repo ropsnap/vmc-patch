@@ -1,6 +1,0 @@
-"d41d:d41d8cd9"
-"d41d:d41d8cd9" -s
-"d41d:d41d8cd9" -h
--s "d41d:d41d8cd9"
--v false "d41d:d41d8cd9"
--s false "d41d:d41d8cd9"
