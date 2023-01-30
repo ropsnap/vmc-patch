@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if ss -tulpn | grep ':50510';
+then
+	echo;
+	echo ' ✓ Proxy Server is running at 50510 normally.'
+	echo;
+else	
+	echo;
+	echo ' 🔴 Proxy Server is not running.'
+	echo ' ...start by → proxy-server-start'
+	echo;
+fi
