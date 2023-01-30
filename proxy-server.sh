@@ -33,6 +33,8 @@ if [  ! -f "$AUTH_FILE" ]; then
     echo;
 fi
 
+echo;
+
 # ------------------------------------------------------------------ 2
 
 echo ' [2] Installing essential packages and nodejs modules ---------'
