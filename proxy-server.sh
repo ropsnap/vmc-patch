@@ -31,9 +31,8 @@ if [  ! -f "$AUTH_FILE" ]; then
     touch ~/proxy-server.auth
     echo '"'$($PUSER):$($PPASS)'"' >> ~/proxy-server.auth
     echo;
+    echo;
 fi
-
-echo;
 
 # ------------------------------------------------------------------ 2
 
