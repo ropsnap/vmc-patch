@@ -3,7 +3,7 @@
 clear;
 
 echo;
-echo ' ------------------ Patch Script → proxy-server.sh ------------';
+echo ' ------------- Patch Script → proxy-server.sh -----------------';
 echo ' → This script installs and setup auto-start of a Proxy Server';
 echo ' --------------------------------------------------------------';
 echo;
@@ -22,7 +22,7 @@ if [  ! -f "$AUTH_FILE" ]; then
 
     echo ' ...creating Proxy Server auth file ~/proxy-server.auth';
     echo;
-    
+
     PUSER=$RANDOM | md5sum | head -c 4;
     PPASS=$RANDOM | md5sum | head -c 8;
 
