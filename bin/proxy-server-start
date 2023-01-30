@@ -9,5 +9,6 @@ sleep 1
 pm2 kill && echo;
 pm2 start straightforward -p 50510 -a $(cat ~/proxy-server.auth) && echo;
 
+echo;
 echo ' ✓ Proxy Server successfully started.'
 echo;
