@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 clear;
 
@@ -18,20 +18,17 @@ sleep 3
 
 AUTH_FILE=~/proxy-server.auth;
 
-if [  -f "$AUTH_FILE" ]; then
+if [  ! -f "$AUTH_FILE" ]; then
+
+    echo ' ...creating Proxy Server auth file ~/proxy-server.auth';
     echo;
-else 
     
     PUSER=$RANDOM | md5sum | head -c 4;
     PPASS=$RANDOM | md5sum | head -c 8;
 
-    echo ' ...creating Proxy Server auth file ~/proxy-server.auth';
-    echo;
-
     # crates and wirtes proxy CLI auth arg
     touch ~/proxy-server.auth
     echo '"'$($PUSER):$($PPASS)'"' >> ~/proxy-server.auth
-
 fi
 
 # ------------------------------------------------------------------ 2
@@ -74,7 +71,7 @@ echo;
 
 sleep 3
 
-echo $HOME/.bashrc >> proxy-server-start
+echo sleep 3 && proxy-server-start >> $HOME/.bashrc
 
 # ------------------------------------------------------------------ 1
 echo ' [5] Starting Proxy Server first time -------------------------'

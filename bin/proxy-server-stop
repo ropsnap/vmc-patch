@@ -6,6 +6,7 @@ echo;
 
 sleep 1
 
-pm2 kill && echo; echo ' ✓ Proxy Server was stopped.'; 
+pm2 kill && echo; 
 
+echo ' ✓ Proxy Server was stopped.'; 
 echo;

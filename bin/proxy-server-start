@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/bin/sh
 
 echo;
 echo ' → Initializing Proxy Server'
