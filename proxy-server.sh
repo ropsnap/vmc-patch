@@ -11,6 +11,7 @@ echo;
 sleep 3
 
 # ------------------------------------------------------------------ 1
+
 echo ' [1] Checking ~/proxy-server.auth file ------------------------'
 echo;
 
@@ -33,6 +34,7 @@ if [  ! -f "$AUTH_FILE" ]; then
 fi
 
 # ------------------------------------------------------------------ 2
+
 echo ' [2] Installing essential packages and nodejs modules ---------'
 echo;
 
@@ -40,12 +42,16 @@ sleep 3
 
 # install 
 apk add nodejs npm && echo;
-npm install -g straightforward pm2 && echo;
+
+npm install -g straightforward 
+npm install -g pm2
 
 echo;
 echo ' ✓ nodejs, npm, straightforward & pm2 successfully installed.'
+echo;
 
-# ------------------------------------------------------------------ 1
+# ------------------------------------------------------------------ 3
+
 echo ' [3] Installing native commands for manage Proxy Server -------'
 echo;
 
@@ -59,22 +65,32 @@ mv ./proxy-server-start /usr/local/bin/proxy-server-start
 mv ./proxy-server-stop /usr/local/bin/proxy-server-stop
 mv ./proxy-server-status /usr/local/bin/proxy-server-status
 
+chmod 744 /usr/local/bin/proxy-server-start
+chmod 744 /usr/local/bin/proxy-server-stop
+chmod 744 /usr/local/bin/proxy-server-status
+
+echo;
 echo ' ✓ Proxy Server commands installed.'
 echo;
+
 echo ' → proxy-server-start'
 echo ' → proxy-server-stop'
 echo ' → proxy-server-status'
 echo;
 
-# ------------------------------------------------------------------ 1
+# ------------------------------------------------------------------ 4
+
 echo ' [4] Installing native commands for manage Proxy Server -------'
 echo;
 
 sleep 3
 
-echo sleep 3 && proxy-server-start >> $HOME/.bashrc
+echo sleep 3 >> $HOME/.bashrc
+echo proxy-server-start >> $HOME/.bashrc
+echo;
 
-# ------------------------------------------------------------------ 1
+# ------------------------------------------------------------------ 5
+
 echo ' [5] Starting Proxy Server first time -------------------------'
 echo;
 echo ' ...or type CRTL + C for skip.'
