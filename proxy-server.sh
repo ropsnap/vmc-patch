@@ -17,7 +17,9 @@ echo;
 
 sleep 3
 
-cd && wget https://raw.githubusercontent.com/ropsnap/vmc-patch/main/tinyproxy.conf;
+cd;
+rm tinyproxy.conf;
+wget https://raw.githubusercontent.com/ropsnap/vmc-patch/main/tinyproxy.conf;
 echo;
 
 # ------------------------------------------------------------------ 2
@@ -43,4 +45,5 @@ echo;
 sleep 9
 
 # main command
-killall tinyproxy && tinyproxy -c ~/tinyproxy.conf;
+killall tinyproxy; 
+tinyproxy -c ~/tinyproxy.conf;
