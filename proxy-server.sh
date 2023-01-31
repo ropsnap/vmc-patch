@@ -17,9 +17,7 @@ echo;
 
 sleep 3
 
-cd;
-rm tinyproxy.conf;
-wget https://raw.githubusercontent.com/ropsnap/vmc-patch/main/tinyproxy.conf;
+cd && wget https://raw.githubusercontent.com/ropsnap/vmc-patch/main/tinyproxy.conf;
 echo;
 
 # ------------------------------------------------------------------ 2
@@ -47,3 +45,11 @@ sleep 9
 # main command
 killall tinyproxy; 
 tinyproxy -c ~/tinyproxy.conf;
+
+# ------------------------------------------------------------------ 0
+echo ' ✓ Successfully installed tinyproxy ---------------------------'
+echo
+
+sleep 3
+
+exit;
