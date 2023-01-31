@@ -45,6 +45,8 @@ sleep 9
 # main command
 tinyproxy -c ~/tinyproxy.conf;
 
+## from now on tinyproxy daemon will auto-start and maintains
+## without need to confgure native services (systemctl, service, etc)
 # ------------------------------------------------------------------ 0
 echo;
 echo ' ✓ Sucessfully started tinyproxy ------------------------------'
