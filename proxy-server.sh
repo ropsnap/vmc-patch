@@ -47,7 +47,8 @@ killall tinyproxy;
 tinyproxy -c ~/tinyproxy.conf;
 
 # ------------------------------------------------------------------ 0
-echo ' ✓ Successfully installed tinyproxy ---------------------------'
+echo;
+echo ' ✓ Sucessfully started tinyproxy ------------------------------'
 echo
 
 sleep 3
