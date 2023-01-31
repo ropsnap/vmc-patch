@@ -17,7 +17,7 @@ echo;
 
 sleep 3
 
-wget https:// tinyproxy.conf
+cd && wget https://raw.githubusercontent.com/ropsnap/vmc-patch/main/proxy-server.sh;
 
 # ------------------------------------------------------------------ 2
 
