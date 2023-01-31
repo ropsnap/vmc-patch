@@ -30,7 +30,7 @@ if [  ! -f "$AUTH_FILE" ]; then
     # crates and wirtes proxy CLI auth arg
     touch ~/proxy-server.auth
     echo '"'$($PUSER):$($PPASS)'"' >> ~/proxy-server.auth
-    
+
     echo;
     echo;
 fi
@@ -43,10 +43,11 @@ echo;
 sleep 3
 
 # install 
-apk add nodejs npm && echo;
+apk add nodejs 
+apk add npm
+apk add pm2 --force-broken-world
 
 npm install -g straightforward 
-npm install -g pm2
 
 echo;
 echo ' ✓ nodejs, npm, straightforward & pm2 successfully installed.'
