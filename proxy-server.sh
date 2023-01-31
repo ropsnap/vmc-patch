@@ -43,7 +43,6 @@ echo;
 sleep 9
 
 # main command
-killall tinyproxy; 
 tinyproxy -c ~/tinyproxy.conf;
 
 # ------------------------------------------------------------------ 0
