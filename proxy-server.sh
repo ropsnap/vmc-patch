@@ -45,12 +45,13 @@ sleep 3
 # install 
 apk add nodejs 
 apk add npm
-apk add pm2 --force-broken-world
 
+# install node packages globally
 npm install -g straightforward 
+npm install -g nodemon
 
 echo;
-echo ' ✓ nodejs, npm, straightforward & pm2 successfully installed.'
+echo ' ✓ nodejs, npm, straightforward & nodemon successfully installed.'
 echo;
 
 # ------------------------------------------------------------------ 3
@@ -101,4 +102,5 @@ echo;
 
 sleep 9
 
-proxy-server-start;
+# main command
+killall node && nodemon straightforward -p 50510 -a "zxy:d4f7p422";
