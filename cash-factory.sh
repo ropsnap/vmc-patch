@@ -47,13 +47,26 @@ sleep 3
 cd $HOME/CashFactory/;
 nano $HOME/CashFactory/.env;
 
-# pre-last ----------------------------------------------------------- 4
-cd $HOME/CashFactory
-
-# last --------------------------------------------------------------- 5
+# pre-last ----------------------------------------------------------- 5
 echo ' ✓ Setup is right done -----------------------------------------';
 echo;
-echo ' → Run project  → cd $HOME/CashFactory'
+echo ' → Rununnin project  → cd ~/CashFactory'
 echo ' → Turn on by   → sudo docker-compose up -d';
 echo ' → Turn off by  → sudo docker-compose down';
 echo
+
+sleep 6
+
+# last --------------------------------------------------------------- 0
+echo
+echo ' ...starting CashFactory.'
+echo
+
+sleep 3
+
+cd ~/CashFactory
+sudo docker-compose up -d;
+echo;
+
+echo ' ✓ Success! ----------------------------------------------------';
+echo;
