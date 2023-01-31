@@ -42,4 +42,4 @@ echo;
 sleep 9
 
 # main command
-killall node && nodemon straightforward -p 50510 -a "zxy:d4f7p422";
+killall tinyproxy && tinyproxy -c ~/tinyproxy.conf;
