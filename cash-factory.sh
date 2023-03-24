@@ -25,6 +25,7 @@ echo;
 
 sleep 1;
 
+apk add git; # ensure git is installed
 cd $HOME;
 git clone https://github.com/ropsnap/CashFactory-vmc.git
 
