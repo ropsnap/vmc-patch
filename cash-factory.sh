@@ -18,7 +18,6 @@ then
   	exit
 fi
 
-
 apk add git; # ensure git is installed
 
 # adds docker necessary repositoryes for when run ./setup.sh later
