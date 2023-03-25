@@ -24,7 +24,9 @@ apk add git; # ensure git is installed
 # adds docker necessary repositoryes for when run ./setup.sh later
 echo 'http://ftp.halifax.rwth-aachen.de/alpine/v3.16/main' >> /etc/apk/repositories
 echo 'http://ftp.halifax.rwth-aachen.de/alpine/v3.16/community' >> /etc/apk/repositories
-apk update
+echo;
+
+apk update;
 
 # thowww ------------------------------------------------------------- 1
 echo;
@@ -39,7 +41,6 @@ git clone https://github.com/ropsnap/CashFactory-vmc.git
 # bef-last ----------------------------------------------------------- 2
 echo;
 echo ' [2] Setting up project -----------------------------------------'
-echo;
 
 sleep 9
 
