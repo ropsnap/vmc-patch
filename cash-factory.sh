@@ -20,13 +20,6 @@ fi
 
 apk add git; # ensure git is installed
 
-# adds docker necessary repositoryes for when run ./setup.sh later
-echo 'http://ftp.halifax.rwth-aachen.de/alpine/v3.16/main' >> /etc/apk/repositories
-echo 'http://ftp.halifax.rwth-aachen.de/alpine/v3.16/community' >> /etc/apk/repositories
-echo;
-
-apk update;
-
 # thowww ------------------------------------------------------------- 1
 echo;
 echo ' [1] Downloading custom CashFactory-vmc -------------------------';

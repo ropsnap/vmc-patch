@@ -78,8 +78,8 @@ echo;
 sleep 1
 
 # install
-apk add sudo
-apk add git # needed for download CashFactory project
+apk add sudo;
+apk add git; # needed for download CashFactory project
 apk add curl && sleep 1;
 
 echo
